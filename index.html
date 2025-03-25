@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalit Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
+
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <!-- <section class="hero" data-aos="fade-up"> -->
+            <img src="images/profile.jpg" alt="Your Profile Picture" class="profile-pic">
+            <h1>Lalit Singh</h1>
+            <p>Passionate Data Analyst | Tech Enthusiast | AI & Web Dev</p>
+            <div class="social-links">
+                <a href=" https://www.instagram.com/singhlalit_24?igsh=MTFxdWRnMDAza213bg==" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/singlalit" target="_blank">
+                    <img src="images/github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="edu-card">
+                <!-- <div class="education-card" data-aos="zoom-in"> -->
+
+                <h3>Engineering</h3>
+                <p>Bachelor of Engineering in Computer Science</p>
+                <p>College Name | Year of Passing</p>
+            </div>
+            <div class="edu-card">
+                <h3>HSC</h3>
+                <p>Higher Secondary Certificate (Science Stream)</p>
+                <p>College Name | Year of Passing</p>
+            </div>
+            <div class="edu-card">
+                <h3>SSC</h3>
+                <p>Secondary School Certificate</p>
+                <p>School Name | Year of Passing</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card" onclick="openProjects('powerbi')">
+                <img src="images/powerbi.png" alt="Power BI">
+                <p>Power BI</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('sql')">
+                <img src="images/sql-server.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('excel')">
+                <img src="images/logo.png" alt="Advanced Excel">
+                <p>Advanced Excel</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('html')">
+                <img src="images/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('css')">
+                <img src="images/css-3.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('js')">
+                <img src="images/java-script.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('python')">
+                <img src="images/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('ai')">
+                <img src="images/chatgpt.png" alt="AI Tools">
+                <p>AI & ChatGPT</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('stats')">
+                <img src="images/online-data.png" alt="Statistics">
+                <p>Statistics</p>
+            </div>
+            <div class="skill-card" onclick="openProjects('git')">
+                <img src="images/github (1).png" alt="Git & GitHub">
+                <p>Git & GitHub</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="certifications">
+        <!-- <section class="certifications" data-aos="fade-up"> -->
+
+        <h2>Certifications</h2>
+        
+        <!-- Self-Learning Card -->
+        <div class="self-learning-card">
+            <!-- <div class="self-learning-card" data-aos="zoom-in"> -->
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-logo">
+            <p>"Most of my knowledge comes from <strong>YouTube</strong>, which is why I have fewer certificates, but my skills speak louder than papers!"</p>
+        </div>
+    
+        <div class="cert-container">
+            <!-- <div class="cert-card" data-aos="flip-up"> -->
+
+            <div class="cert-card">
+                <h3>App & Web Development Internship</h3>
+                <p>Golden Bird Education</p>
+                <a href="images/certificate.jpeg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+    
+    
+   
+    <script src="script.js"></script>
+    <!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration (1 second)
+        once: true // Animate only once
+    });
+</script>
+
+</body>
+</html>

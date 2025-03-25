@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    padding: 100px;
+    background-color: #333;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Profile Section */
+.profile-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    color: white;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Education Section */
+.education {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.education h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Education Cards */
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    color: white;
+    padding: 30px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1e1e2f;
+    color: white;
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Skill Cards */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #3a3a5e, #6a6ab8);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card img {
+    width: 80px; /* Adjust icon size */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
+    }
+}
+
+
+/* Certifications Section */
+.certifications {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.certifications h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cert-note {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Certification Card */
+.cert-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cert-card {
+    background: linear-gradient(135deg, #3a3a5e, #6a6ab8);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cert-card p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Certificate Button */
+.cert-btn {
+    display: inline-block;
+    background: white;
+    color: #3a3a5e;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cert-btn:hover {
+    background: #ddd;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cert-card {
+        width: 80%;
+    }
+}
+/* Self-Learning Card */
+.self-learning-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.self-learning-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.self-learning-card p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-left: 15px;
+}
+
+/* YouTube Logo */
+.youtube-logo {
+    width: 50px;
+    height: auto;
+}
+
+
+
