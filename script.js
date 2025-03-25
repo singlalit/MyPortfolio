@@ -4,7 +4,7 @@ function openProjects(skill) {
         sql: "https://github.com/YOUR_GITHUB/SQL-Projects",
         excel: "https://github.com/YOUR_GITHUB/Excel-Projects",
         html: "https://singlalit.github.io/HighProteinKitchen/",
-        css: "https://github.com/YOUR_GITHUB/Web-Projects",
+        css: "https://singlalit.github.io/css-only-website/",
         js: "https://github.com/YOUR_GITHUB/JavaScript-Projects",
         python: "https://github.com/YOUR_GITHUB/Python-Projects",
         ai: "https://github.com/YOUR_GITHUB/AI-Projects",
