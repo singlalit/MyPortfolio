@@ -277,5 +277,54 @@ header {
     height: auto;
 }
 
+/* Certificate Container - Single Column Layout */
+.cert-container {
+    display: flex;
+    flex-direction: column; /* Ensures each certificate is in one line */
+    align-items: center; /* Centers the cards */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Certificate Card */
+.cert-card {
+    width: 60%; /* Adjusts width for a balanced look */
+    background: linear-gradient(135deg, #3a3a5e, #6a6ab8);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Certificate Button */
+.cert-btn {
+    display: inline-block;
+    background: white;
+    color: #3a3a5e;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cert-btn:hover {
+    background: #ddd;
+    color: #000;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .cert-card {
+        width: 90%; /* Adjusts width for mobile screens */
+    }
+}
 
 
