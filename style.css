@@ -8,7 +8,9 @@ body {
 
 header {
     padding: 100px;
-    background-color: #333;
+    /* background-color: #333; */
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    
     color: white;
 }
 
@@ -22,8 +24,10 @@ header {
 /* Profile Section */
 .profile-container {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 50px;
     background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    /* background: url('images/bg.jpeg') no-repeat center center;
+    background-size: cover; */
     color: white;
 }
 
@@ -328,3 +332,112 @@ header {
 }
 
 
+/* General Section Styling */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =======================
+    🔥 About Me Section 
+========================= */
+.about {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 100px 10%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about p strong {
+    color: #ff6b6b;
+}
+
+/* ===========================
+    🔥 Experience Section 
+=========================== */
+.experience {
+    background: #ffffff;
+    padding: 100px 10%;
+}
+
+.experience-card {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-left: 5px solid #ff6b6b;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* ===========================
+    🔥 Contact Me Section 
+=========================== */
+.contact {
+    background: linear-gradient(135deg, #222, #333);
+    color: white;
+    padding: 100px 10%;
+}
+
+.contact p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #bbb;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background: #ff4747;
+    transform: scale(1.1);
+}
